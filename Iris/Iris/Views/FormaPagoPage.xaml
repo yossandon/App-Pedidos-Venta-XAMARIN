@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.FormaPagoPage"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout BackgroundColor="Orange" Padding="2">
+                <Label FontAttributes="Bold" FontSize="Small" Text="Escoje Forma de Pago"  TextColor="White" HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+            </StackLayout>
+            <ScrollView>
+                <StackLayout  Orientation="Vertical" HorizontalOptions="Center">
+                    <ListView x:Name="lsvFormaPago" BackgroundColor="White" HasUnevenRows ="true" SeparatorVisibility="None" >
+                        <ListView.ItemTemplate >
+                            <DataTemplate >
+                                <ViewCell>
+                                    <!--<Frame CornerRadius="10" HasShadow="true" Padding="5" Margin="15">-->
+                                    <Button 
+                                            BorderColor="#0288D1" 
+                                            Text="{Binding Descripcion}" BorderRadius="7"  WidthRequest="300" Clicked="Selecciona"
+                                            HeightRequest="50" BackgroundColor="#CFD8DC"  VerticalOptions="Start"  Margin ="0,10,0,10"
+                                            HorizontalOptions="CenterAndExpand" TextColor="#0288D1" FontSize="Small" CommandParameter="{Binding ID}">
+                                    </Button>
+                                    <!--</Frame>-->
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

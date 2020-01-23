@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Monto_CancelarPage"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout BackgroundColor="Orange" Padding="2">
+                <Label FontAttributes="Bold" FontSize="Small" Text="¿Con que monto cancelará?"  TextColor="White" HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Margin="50,10"  >
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label  HorizontalOptions="StartAndExpand" Text="Sub total" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtSubtotal" HorizontalOptions="End" FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Costo envío"  FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtEnvio" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout >
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Total" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtTotal" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout>
+                    <Entry
+                         x:Name="txtMonto" Margin="30,10,30,0" Keyboard="Numeric" TextColor="#0288D1" Placeholder="Monto a Cancelar"  
+                         FontSize="Small" MaxLength="6" >
+                    </Entry>
+                    <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                    <Button 
+                            BorderRadius="10" HeightRequest="40" WidthRequest="200" BackgroundColor="#4CAF50"
+                            VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                            Text="Continuar" TextColor="White" Clicked="Continuar" Margin="0,15,0,0">
+                    </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             xmlns:controls="clr-namespace:Pedidos.Controls"
+             xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="Pedidos.Views.RestaurantePage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+      <StackLayout BindingContext="{Binding Restaurante}">
+                <ScrollView Orientation="Horizontal" Padding="2" BackgroundColor="WHite">
+                        <StackLayout Orientation="Horizontal" BackgroundColor="#CFD8DC">
+                            <controls:TLScrollView 
+				            Orientation="Horizontal" 
+				            x:Name="lsvCategorias"
+                            BackgroundColor="Transparent" >
+                                <controls:TLScrollView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                        <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                                        <StackLayout Orientation="Vertical" Padding="0,2,0,2">
+                                            <AbsoluteLayout >
+                                                    <abstractions:CircleImage Source="{Binding Imagen, Converter={StaticResource ByteArrayToImage}}"
+                                                    HeightRequest="75"
+                                                    HorizontalOptions="CenterAndExpand"
+                                                    VerticalOptions="CenterAndExpand"
+                                                    Aspect="AspectFill"
+                                                    WidthRequest="75" />
+                                                    <Button
+                                                    BorderColor="Blue" BackgroundColor="Transparent" HeightRequest="75"
+                                                    WidthRequest="75" Command="{Binding LoginCommand}" Clicked="btnrcategoria" 
+                                                    CommandParameter="{Binding Nombre}">
+                                                    </Button>
+                                            </AbsoluteLayout>
+                                                <Label 
+                                               Text="{Binding Descripcion}"  FontSize="Micro" 
+                                               TextColor="Black" FontAttributes="Bold" BackgroundColor="Transparent"
+                                               VerticalOptions="Center" HorizontalOptions="Center"/>
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </controls:TLScrollView.ItemTemplate>
+                            </controls:TLScrollView>
+                        </StackLayout>
+                </ScrollView>
+                <!--<ActivityIndicator
+                    IsRunning="{Binding IsRunning, Mode=TwoWay}"
+                    VerticalOptions="CenterAndExpand">
+                </ActivityIndicator>-->
+                <ListView x:Name="lsvArticulos" BackgroundColor="WhiteSmoke" HasUnevenRows ="true" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                            <StackLayout Margin="3,2,0,0">
+                                <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="1.7*"/>
+                                        </Grid.ColumnDefinitions>
+                                    <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                                    <StackLayout Grid.Column="0" Padding="2,2">
+                                            <AbsoluteLayout >
+                                                <Image 
+                                            HeightRequest="180" WidthRequest="220" BackgroundColor="White" HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Fill" Aspect="AspectFill" Source="{Binding Imagen, 
+                                            Converter={StaticResource ByteArrayToImage}}">
+                                                </Image>
+                                            <Label 
+                                                    FontAttributes="Bold" FontSize="Small" Text="{Binding Oferta}" BackgroundColor="Red" 
+                                                    TextColor="White" Margin="15,90,0,0" Rotation="-45"/>
+                                            <!--<Label 
+                                                    FontAttributes="Bold" FontSize="Small" Text="{Binding Oferta}" BackgroundColor="Red" 
+                                                    TextColor="White" Margin="10,10,0,0"/>-->
+                                            <Button
+                                            BorderColor="Blue" BackgroundColor="Transparent" BorderRadius="20" HeightRequest="180"
+                                            WidthRequest="220" Command="{Binding LoginCommand}" Clicked="Agregar_Recomendacion" 
+                                            CommandParameter="{Binding Codigo}">
+                                                </Button>
+                                            </AbsoluteLayout>
+                                    </StackLayout>
+                                    <StackLayout Grid.Column="1" VerticalOptions="Center">
+                                            <Label FontAttributes="Bold" FontSize="Micro" Text="{Binding Categoria}"  TextColor="Gray"/>
+                                            <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Nombre}"  TextColor="Black"/>
+                                            <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Precio_Venta, StringFormat='{0:N0}'}" TextColor="Red"/>
+                                            <Label FontSize="Micro" Text="{Binding Tiempo_Espera}"  TextColor="Gray"/>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="Micro" Text="Envío $" TextColor="Black"/>
+                                                <Label FontSize="Micro" Text="{Binding Costo_Envio, StringFormat='{0:N0}'}"  TextColor="Black"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontSize="Micro" Text="Mín. $" TextColor="Black"/>
+                                                <Label FontSize="Micro" Text="{Binding Consumo_Minimo, StringFormat='{0:N0}'}"  TextColor="Black"/>
+                                            </StackLayout>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label FontAttributes="Bold" FontSize="Small" Text="*" TextColor="#26A69A"/>
+                                                <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Evaluacion}"  TextColor="#26A69A"/>
+                                            </StackLayout>
+                                    </StackLayout>
+                                    </Grid>
+                                    <StackLayout Orientation="Horizontal" Margin="10,-5,10,0">
+                                        <Label FontAttributes="Italic" FontSize="Micro" Text="{Binding Componentes}"  TextColor="Black"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                <Button 
+                    x:Name="txtTotalCuenta" BorderRadius="7"  WidthRequest="300" IsVisible="false" 
+                    HeightRequest="35" BackgroundColor="Red" Clicked="Detalle" VerticalOptions="Start"  Margin ="2,0,2,2"
+                    HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Micro" >
+                </Button>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

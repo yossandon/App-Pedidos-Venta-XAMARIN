@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.ModificarPedidoPage"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ByteArrayToImageSourceConverter x:Key="ByteArrayToImage" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <StackLayout BackgroundColor="Orange" Padding="2">
+                    <Label FontAttributes="Bold" FontSize="Small" Text="Modificar Su Pedido"  TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout BackgroundColor="WhiteSmoke" Orientation="Vertical">
+                    <ListView x:Name="lsvArticulo" BackgroundColor="WhiteSmoke" HasUnevenRows ="true" SeparatorVisibility="Default" HeightRequest="250">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="3*"/>
+                                                <ColumnDefinition Width="1.5*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout Grid.Column="0" Padding="10,0,0,0">
+                                                <Image 
+                                                HeightRequest="180" WidthRequest="220" BackgroundColor="White" HorizontalOptions="CenterAndExpand"
+                                                VerticalOptions="Fill" Aspect="AspectFill" Source="{Binding Imagen, 
+                                                Converter={StaticResource ByteArrayToImage}}">
+                                                </Image>
+                                            </StackLayout>
+                                            <StackLayout Grid.Column="1" VerticalOptions="Center">
+                                                <Label FontAttributes="Bold" FontSize="Micro" Text="{Binding Categoria}"  TextColor="Gray"/>
+                                                <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Descripcion}"  TextColor="Black"/>
+                                                <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Precio_Venta, StringFormat='{0:N0}'}" TextColor="Red"/>
+                                                <Label FontSize="Micro" Text="{Binding Tiempo_Espera}"  TextColor="Gray"/>
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label FontSize="Micro" Text="Envío $" TextColor="Black"/>
+                                                    <Label FontSize="Micro" Text="{Binding Costo_Envio, StringFormat='{0:N0}'}"  TextColor="Black"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label FontSize="Micro" Text="Mín. $" TextColor="Black"/>
+                                                    <Label FontSize="Micro" Text="{Binding Consumo_Minimo, StringFormat='{0:N0}'}"  TextColor="Black"/>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label FontAttributes="Bold" FontSize="Small" Text="*" TextColor="#26A69A"/>
+                                                    <Label FontAttributes="Bold" FontSize="Small" Text="{Binding Evaluacion}"  TextColor="#26A69A"/>
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </Grid>
+                                        <StackLayout Orientation="Horizontal" Margin="10,-5,10,0">
+                                            <Label FontAttributes="Italic" FontSize="Micro" Text="{Binding Componentes}"  TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackLayout>
+                        <StackLayout BackgroundColor="WhiteSmoke" Orientation="Horizontal" HorizontalOptions="Center" >
+                            <Button 
+                                BorderRadius="25" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"
+                                VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Small" 
+                                Image="Eliminar" TextColor="White" Clicked="Eliminar">
+                            </Button>
+                            <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                            <Label x:Name="txtCantidad"  Margin="25,0,-5,0" VerticalOptions="Center" FontSize="Medium" 
+                                                       FontAttributes="Bold" TextColor="Blue" WidthRequest="50" HorizontalOptions="Center"/>
+                            <Button 
+                                BorderRadius="25" HeightRequest="50" WidthRequest="50" BackgroundColor="Transparent"
+                                VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Small" Image="Agregar"
+                                TextColor="White" Clicked="Agregar">
+                            </Button>
+                        </StackLayout>
+                        <Button 
+                            BorderRadius="10" HeightRequest="40" WidthRequest="200" BackgroundColor="#43A047"
+                            VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                            x:Name="txtTotalVentaArticulo" TextColor="White" Clicked="Mofificar_Pedido">
+                        </Button>
+                        <Label HorizontalOptions="Center" VerticalOptions="Center" Margin="2,5,2,2" FontAttributes="Bold" 
+                             FontSize="Small" Text="¿Agregar una Nota al Producto?"  TextColor="#0288D1"/>
+                        <Entry
+                            x:Name="txtMensaje" Margin="5,10,5,0" Keyboard="Default" TextColor="Black" Placeholder="Nota al producto"  
+                             FontSize="Small" MaxLength="100" >
+                        </Entry>
+                        <Button 
+                            BorderRadius="10" HeightRequest="40" WidthRequest="200" BackgroundColor="Red"
+                            VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                            Text="Eliminar Producto" TextColor="White" Clicked="Elimina_Producto">
+                        </Button>
+                    </StackLayout>
+                    <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

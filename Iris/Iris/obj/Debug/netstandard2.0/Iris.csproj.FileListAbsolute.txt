@@ -1,0 +1,133 @@
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\ComandasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\CuentaDividirActualPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\CuentaDividirNuevaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\CuentasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\DividirCuentaTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\EstadisticaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\JuntarMesasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPageDetail.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MensajesPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MesaDividirPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\MesasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\PasswordPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Views\ReservarMesaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CoreCompileInputs.cache
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfoInputs.cache
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfo.cs
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.pdb
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.csprojAssemblyReference.cache
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Iris.deps.json
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Iris.pdb
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Curso de XAMARIN\Iris\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Curso de XAMARIN\Iris\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CopyComplete
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Iris.deps.json
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Iris.pdb
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.csprojAssemblyReference.cache
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\BusquedaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasInventarioTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\CodigoBarrasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\ConsultaPrecioPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\InicioVentaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioArticulosPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCantidadPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCategoriaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPageDetail.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\PasswordPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CoreCompileInputs.cache
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfoInputs.cache
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfo.cs
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CopyComplete
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris Punto Venta2\Iris\Iris\obj\Debug\netstandard2.0\Iris.pdb
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.deps.json
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.pdb
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.csprojAssemblyReference.cache
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\BusquedaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasInventarioTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasTabbedPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ConsultaPrecioPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InicioVentaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioArticulosPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCantidadPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCategoriaPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPageDetail.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\PasswordPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ScannerPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CoreCompileInputs.cache
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfoInputs.cache
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfo.cs
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CopyComplete
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.dll
+C:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.pdb
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.deps.json
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.dll
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\bin\Debug\netstandard2.0\Iris.pdb
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ArticulosTabbedPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\BusquedaPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasInventarioTabbedPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\CategoriasTabbedPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ConsultaPrecioPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InicioVentaPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioArticulosPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCantidadPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\InventarioCategoriaPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MasterPageDetail.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\PasswordPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\ScannerPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Views\VentasPage.xaml.g.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.csproj.CoreCompileInputs.cache
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfoInputs.cache
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.AssemblyInfo.cs
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.dll
+D:\Curso de XAMARIN\Iris Punto Venta\Iris\Iris\obj\Debug\netstandard2.0\Iris.pdb

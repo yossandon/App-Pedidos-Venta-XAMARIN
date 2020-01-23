@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Agregar_IngredientesPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <!--<Margin (izquierdo, superior, derecho e inferior )-->
+        <Grid Padding="30,15,30,15">
+            <StackLayout Margin="15,5">
+                <StackLayout BackgroundColor="Orange">
+                    <Label x:Name="txtMensaje" FontSize="Small" HorizontalOptions="Center" TextColor="White" />
+                </StackLayout>
+                <ListView 
+                x:Name="lsvIngredientes" BackgroundColor="Silver" HasUnevenRows ="true" SeparatorVisibility="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell >
+                                <Frame CornerRadius="10" HasShadow="true" Padding="5" Margin="2" >
+                                    <Button
+                                            IsEnabled="{Binding IsEnabled, Mode=TwoWay}" Clicked="Seleccionar"
+                                            BorderRadius="7"  WidthRequest="250" CommandParameter="{Binding Descripcion}"
+                                            HeightRequest="40" BackgroundColor="White" Text="{Binding Descripcion}" 
+                                            HorizontalOptions="CenterAndExpand" TextColor="#0288D1" FontSize="Small" >
+                                    </Button>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout BackgroundColor="White">
+                    <Label x:Name="txtIngredientes" FontSize="Small" HorizontalOptions="Center" TextColor="#EF5350" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

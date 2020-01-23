@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Pago_OnLinePage"
+              xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout>
+                <StackLayout BackgroundColor="Orange" Padding="2">
+                    <Label FontAttributes="Bold" FontSize="Small" Text="Pago On Line"  TextColor="White" HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                </StackLayout>
+                <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                <StackLayout BackgroundColor="White" Padding="10">
+                    <Label FontAttributes="Bold" FontSize="Micro" Margin="5,0"
+                           Text="El monto de su pedido se descontará de la tajeta una vez que el restaurante confirma el envío"  
+                           TextColor="#0288D1" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout>
+                    <Image 
+                     HeightRequest="70" WidthRequest="200" BackgroundColor="White" HorizontalOptions="CenterAndExpand"
+                     VerticalOptions="Fill" Aspect="AspectFill" Source="Tarjetas">
+                    </Image>
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout Margin="15,0">
+                        <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label  HorizontalOptions="StartAndExpand" Text="Número de Tarjeta" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtNumeroTarjeta" Margin="2,0" Keyboard="Numeric" TextColor="#0288D1" Placeholder="1234-5678-1234-5678"  
+                             FontSize="Small" MaxLength="19"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Expiración"  FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtExpiracion" Margin="2" Keyboard="Numeric" TextColor="#0288D1" Placeholder="01-2019"  
+                             FontSize="Small" MaxLength="7"/>
+                        </StackLayout >
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Nombre Tarjeta" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtNombreTarjeta" Margin="2,0" Keyboard="Default" TextColor="#0288D1" Placeholder="Nombre tarjeta"  
+                             FontSize="Small" MaxLength="20"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Código Seguridad" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtCodigoSeguridad" Margin="2,0" Keyboard="Numeric" TextColor="#0288D1" Placeholder="Código seguridad"  
+                             FontSize="Small" MaxLength="3"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Rut" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtRut" Margin="2,0" Keyboard="Numeric" TextColor="#0288D1" Placeholder="Sin guión"  
+                             FontSize="Small" MaxLength="10"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <!--<Margin (izquierdo, superior, derecho e inferior )-->
+            <Button 
+                 BorderRadius="10" HeightRequest="35" WidthRequest="200" BackgroundColor="Red"
+                 VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                 Text="Continuar" TextColor="White" Clicked="Continuar" Margin="0,15,0,5">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

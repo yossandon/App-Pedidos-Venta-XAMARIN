@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Direccion_EnvioPage"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Margin="50,2"  >
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label  HorizontalOptions="StartAndExpand" Text="Sub total" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtSubtotal" HorizontalOptions="End" FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Costo envío"  FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtEnvio" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout >
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Total" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtTotal" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#0288D1"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Cancela con" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtMontoCancela" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#EF9A9A"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Su vuelto" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                    <Label x:Name="txtVuelto" HorizontalOptions="End"  FontAttributes="Bold" FontSize="Small" TextColor="#81C784"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout BackgroundColor="Orange" Padding="2">
+                <Label FontAttributes="Bold" FontSize="Small" Text="Detalles de entrega"  TextColor="White" HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout   Margin="5,2">
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Dirección" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Column="0" Orientation="Vertical">
+                            <Label FontSize="Small" x:Name="txtApodo"   TextColor="#EF9A9A"/>
+                            <Label FontSize="Small" x:Name="txtDireccion"  TextColor="#0288D1"/>
+                        </StackLayout>
+                        <Button Grid.Column="1"
+                            BorderRadius="10" HeightRequest="35" WidthRequest="65" BackgroundColor="#EF9A9A"
+                            VerticalOptions="Center" HorizontalOptions="End" FontAttributes="None" FontSize="Micro"  
+                            Text="Editar" TextColor="White" Clicked="Editar_Direccion">
+                        </Button>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="5,2">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="StartAndExpand" Text="Forma Pago" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                    <!--<Button 
+                            BorderRadius="10" HeightRequest="35" WidthRequest="65" BackgroundColor="#EF9A9A"
+                            VerticalOptions="Center" HorizontalOptions="End" FontAttributes="None" FontSize="Micro"  
+                            Text="Editar" TextColor="White" Clicked="Editar_Forma_Pago">
+                    </Button>-->
+                </StackLayout>
+                <Label x:Name="txtFormaPago" HorizontalOptions="StartAndExpand"  FontAttributes="None" FontSize="Small" TextColor="#0288D1"/>
+            </StackLayout>
+            <StackLayout   Margin="5,2">
+                <Label HorizontalOptions="StartAndExpand" Text="Agregar comentario adicional" FontAttributes="Bold" FontSize="Small" TextColor="Black"/>
+                <Entry
+                            x:Name="txtMensaje" Margin="5,10,5,0" Keyboard="Default" TextColor="Black" Placeholder="Comentario"  
+                             FontSize="Small" MaxLength="50" >
+                </Entry>
+            </StackLayout>
+            <!--<Margin (izquierdo, superior, derecho e inferior )-->
+            <Button 
+                            BorderRadius="10" HeightRequest="35" WidthRequest="200" BackgroundColor="Red"
+                            VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                            Text="Enviar Pedido" TextColor="White" Clicked="EnviarPedido" Margin="0,15,0,5">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

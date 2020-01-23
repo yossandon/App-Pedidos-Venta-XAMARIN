@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Editar_DireccionesPage"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Orange" Padding="2">
+                <Label FontAttributes="Bold" FontSize="Small" Text="Sus direcciones"  TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout >
+                <ListView x:Name="lsvDireccionesCliente" BackgroundColor="White" HasUnevenRows ="true" SeparatorVisibility="Default" Margin="3" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Grid  >
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*"/>
+                                            <!--<ColumnDefinition Width="Auto"/>-->
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout Orientation="Vertical" Grid.Column="0">
+                                            <Label FontSize="Small" Text="{Binding Apodo}"  TextColor="#EF9A9A"/>
+                                            <Button
+                                                Clicked="Seleccion"  FlowDirection="LeftToRight"
+                                                BorderRadius="7"  WidthRequest="350" CommandParameter="{Binding ID}"
+                                                HeightRequest="40" BackgroundColor="WhiteSmoke" Text="{Binding Direccion}" 
+                                                TextColor=" #0288D1" FontSize="Small" >
+                                            </Button>
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button 
+                    BorderRadius="10" HeightRequest="35" WidthRequest="200" BackgroundColor="Red"
+                    VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                    Text="Agrgar Dirección" TextColor="White" Clicked="Direccion" Margin="0,15,0,5">
+                </Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

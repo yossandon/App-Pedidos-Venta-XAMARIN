@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pedidos.Views.Agregar_DireccionPage"
+             xmlns:local="clr-namespace:Pedidos.Models"
+             BindingContext="{Binding Main, Source={StaticResource Locator}}">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+           
+            <StackLayout>
+                <StackLayout BackgroundColor="Orange" Padding="2">
+                    <Label FontAttributes="Bold" FontSize="Small" Text="Nueva Dirección"  TextColor="White" HorizontalOptions="Center" 
+                               VerticalOptions="Center"/>
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout Margin="5,0">
+                        <!--<Margin (izquierdo, superior, derecho e inferior )-->
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label  HorizontalOptions="StartAndExpand" Text="Apodo(*)" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtApodo" Margin="2,0" Keyboard="Default" TextColor="#0288D1" Placeholder="Ejemplo Casa, Oficina..."  
+                             FontSize="Small" MaxLength="20"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Calle(*)"  FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtCalle" Margin="2" Keyboard="Default" TextColor="#0288D1" Placeholder="Calle"  
+                             FontSize="Small" MaxLength="100"/>
+                        </StackLayout >
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Número/Depto.(*)" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtNumero" Margin="2,0" Keyboard="Default" TextColor="#0288D1" Placeholder="Número/Depto"  
+                             FontSize="Small" MaxLength="20"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <Label HorizontalOptions="StartAndExpand" Text="Ciudad(*)" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                                <Button 
+                                BorderRadius="10" HeightRequest="35" WidthRequest="65" BackgroundColor="#EF9A9A"
+                                VerticalOptions="Center" HorizontalOptions="End" FontAttributes="None" FontSize="Micro"  
+                                Text="Buscar" TextColor="White" Clicked="Buscar_Ciudad">
+                                </Button>
+                            </StackLayout>
+                            <Label x:Name="txtCiudad" HorizontalOptions="StartAndExpand"  FontAttributes="None" FontSize="Small" TextColor="#0288D1"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <Label HorizontalOptions="StartAndExpand" Text="Comuna(*)" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                                <Button 
+                                BorderRadius="10" HeightRequest="35" WidthRequest="65" BackgroundColor="#EF9A9A"
+                                VerticalOptions="Center" HorizontalOptions="End" FontAttributes="None" FontSize="Micro"  
+                                Text="Buscar" TextColor="White" Clicked="Buscar_Comuna">
+                                </Button>
+                            </StackLayout>
+                            <Label x:Name="txtComuna" HorizontalOptions="StartAndExpand"  FontAttributes="None" FontSize="Small" TextColor="#0288D1"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Referencia" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtReferencia" Margin="2,0" Keyboard="Default" TextColor="#0288D1" Placeholder="Referencia"  
+                             FontSize="Small" MaxLength="50"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                            <Label HorizontalOptions="StartAndExpand" Text="Teléfono(*)" FontAttributes="None" FontSize="Small" TextColor="Black"/>
+                            <Entry  x:Name="txtTelefono" Margin="2,0" Keyboard="Numeric" TextColor="#0288D1" Placeholder="Número teléfono"  
+                             FontSize="Small" MaxLength="10"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <!--<Margin (izquierdo, superior, derecho e inferior )-->
+            <Button 
+                            BorderRadius="10" HeightRequest="35" WidthRequest="200" BackgroundColor="Red"
+                            VerticalOptions="EndAndExpand" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Micro"  
+                            Text="Agregar" TextColor="White" Clicked="AgregarDireccion" Margin="0,15,0,5">
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
